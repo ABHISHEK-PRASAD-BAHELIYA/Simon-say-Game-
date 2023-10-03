@@ -12,6 +12,6 @@
 1. CSS
 1. JAVASCRIPT
 ## Author:
-Name: ABHISHEK PRASAD BAHELIYA
-EMAIL: singhabhishek74408@gmail.com
+* Name: ABHISHEK PRASAD BAHELIYA
+* EMAIL: singhabhishek74408@gmail.com
 
