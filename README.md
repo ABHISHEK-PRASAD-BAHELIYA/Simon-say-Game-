@@ -15,4 +15,4 @@
 * Name: ABHISHEK PRASAD BAHELIYA
 * EMAIL: singhabhishek74408@gmail.com
 ## Link
-https://abhishek74401.github.io/Simon-say-Game-/
+https://abhishek-prasad-baheliya.github.io/Simon-say-Game-/
