@@ -10,7 +10,6 @@ let h2 = document.querySelector("h2");
 
 document.addEventListener("keypress", () =>{
     if(started == false) {
-        console.log("game started!");
         started = true;
 
         levelUp();
@@ -41,7 +40,6 @@ function levelUp() {
     let randColor = btns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);
-    console.log(gameSeq);
     gameFlash(randBtn);
 }
 
@@ -52,6 +50,7 @@ function checkAns(idx) {
         }
     } else {
         h2.innerText = `Game Over! Press any key to Start.`;
+        reset();
     }
 }
 
@@ -61,13 +60,20 @@ function btnPress() {
     userFlash(btn);
 
     userColor = btn.getAttribute("id");
-    console.log(userColor);
     userSeq.push(userColor);
 
     checkAns(userSeq.length-1);
-}
+};
 
 let allBtns = document.querySelectorAll(".btn");
 for(btn of allBtns) {
     btn.addEventListener("click", btnPress);
+};
+
+function reset() {
+    started = false;
+    gameSeq = [];
+    userSeq = [];
+    level = 0;
+
 }
