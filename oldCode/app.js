@@ -49,13 +49,17 @@ function checkAns(idx) {
             setTimeout(levelUp, 1000);
         }
     } else {
-        h2.innerText = `Game Over! Press any key to Start.`;
+        h2.innerHTML = `Game Over! Your Score was <strong>${level}</strong> <br/> Press any key to Start.`;
+        document.querySelector("body").style.backgroundColor = "red";
+        setTimeout(() => {
+            document.querySelector("body").style.backgroundColor = "white";
+        }, 150);
         reset();
     }
 }
 
 function btnPress() {
-    console.log(this);
+    // console.log(this);
     let btn = this;
     userFlash(btn);
 
